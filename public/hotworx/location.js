@@ -509,7 +509,7 @@ function renderSearchResults(results) {
   results.forEach((result, index) => {
     if (result.predictions) {
       resultsDiv.innerHTML += `
-        <li onclick="setAutoSearchLocaton('${result["description"]}')">
+        <li onclick="setAutoSearchLocaton('${result["description"]}')" role="button">
           <div class="subtitle-part" style="display: flex; flex-direction: row; justify-content: space-between;">
             <div class="subtitle">
               ${result["description"]}
@@ -520,7 +520,7 @@ function renderSearchResults(results) {
     } else {
       resultsDiv.innerHTML += `
         <li onclick="window.open('${document.location.origin}/studio/${result["slug"]
-        }', '_self')">
+        }', '_self')" role="link">
           <div style="margin-bottom: 3px; display: flex; flex-direction: row; justify-content: space-between;">
             <div class="title"><b>${result["name"]}${result["location-tag"] ? " " + result["location-tag"] + "" : ""
         }</b></div>

@@ -495,7 +495,7 @@ function renderSearchResults(results) {
   results.forEach((result, index) => {
     if (result.predictions) {
       resultsDiv.innerHTML += `
-        <li onclick="setAutoSearchLocaton('${result["description"]}')">
+        <li onclick="setAutoSearchLocaton('${result["description"]}')" role="button">
           <div class="subtitle-part" style="display: flex; flex-direction: row; justify-content: space-between;">
             <div class="subtitle">
               ${result["description"]}
@@ -507,7 +507,7 @@ function renderSearchResults(results) {
       const mapLink = `/spa/${result.slug}`;
 
       resultsDiv.innerHTML += `
-        <li onclick="movePage('${mapLink}')">
+        <li onclick="movePage('${mapLink}')" role="link">
         <div class="live-item">
           <div style="margin-top: 4px; margin-bottom: 3px; display: flex; flex-direction: row; justify-content: space-between;">
             <div class="title"><b>${result["name"]}${result["location-tag"] ? " " + result["location-tag"] + "" : ""
