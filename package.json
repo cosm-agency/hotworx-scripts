@@ -1,0 +1,42 @@
+{
+  "name": "webflow-generate-image",
+  "version": "1.0.0",
+  "description": "webflow auto generate image using webhook",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banchelli36/webflow-generate-image.git"
+  },
+  "keywords": [
+    "webflow",
+    "webhook",
+    "google",
+    "map"
+  ],
+  "author": "Alessandro Banchelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banchelli36/webflow-generate-image/issues"
+  },
+  "homepage": "https://github.com/banchelli36/webflow-generate-image#readme",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.1.14",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "googleapis": "^85.0.0",
+    "jsonfile": "^6.1.0",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "xml2js": "^0.4.23"
+  }
+}
