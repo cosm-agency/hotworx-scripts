@@ -2,3 +2,5 @@
 /node_modules
 /images
 /instruction.md
+/public/planetbeach/images
+.env
